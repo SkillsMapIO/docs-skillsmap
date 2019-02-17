@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'SkillsMap', // Title for your website.
+  tagline: 'Give your team the support they need to thrive',
   url: 'https://dmorgantini.github.io', // Your website URL
   baseUrl: '/docs-skillsmap/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -39,7 +39,6 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
@@ -54,8 +53,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#29363d',
+    secondaryColor: '#337ab7',
   },
 
   /* Custom fonts for website */
