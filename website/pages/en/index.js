@@ -1,11 +1,11 @@
-const React = require('react');
+const React = require("react");
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const { siteConfig, language = "" } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
@@ -17,14 +17,19 @@ class HomeSplash extends React.Component {
     );
 
     const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
+      <div>
+        <div className="logo__img-container">
+          <img
+            className="logo__img"
+            src={props.img_src}
+            alt="Project Logo"
+          />
+        </div>
       </div>
     );
 
     const ProjectTitle = () => (
       <h2 className="projectTitle">
-        {siteConfig.title}
         <small>{siteConfig.tagline}</small>
       </h2>
     );
@@ -47,13 +52,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/SkillsMapLogoWithName.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl("doc1.html")}>Example Link</Button>
+            <Button href={docUrl("doc2.html")}>Example Link 2</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -63,12 +68,12 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
+    const { config: siteConfig, language = "" } = this.props;
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer"></div>
+        <div className="mainContainer" />
       </div>
     );
   }

@@ -1,5 +1,20 @@
 /* your custom css */
 
+.nav-footer {
+  background: #0F3D5E;
+}
+
+.logo__img-container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo__img {
+  max-width: 100%;
+  width: auto;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
