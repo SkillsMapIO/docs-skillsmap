@@ -13,7 +13,7 @@
 const siteConfig = {
   title: 'SkillsMap', // Title for your website.
   tagline: 'Useful guidance, advice and tips.',
-  url: 'https://dmorgantini.github.io', // Your website URL
+  url: 'https://SkillsMapIO.github.io', // Your website URL
   baseUrl: '/docs-skillsmap/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -21,7 +21,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'docs-skillsmap',
-  organizationName: 'dmorgantini',
+  organizationName: 'SkillsMapIO',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
